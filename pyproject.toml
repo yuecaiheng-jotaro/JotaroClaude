@@ -1,0 +1,13 @@
+[project]
+name = "JotaroCluade"
+version = "0.0.1"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "pydantic>=2.0",
+    "python-dotenv>=1.0"
+]
+
+[project-scipts]
+jclaude      = "jotaro_claude.cli.main:main"
+jclaude-core = "jotaro_claude.core.app:run"
+jclaudetui   = "jotaro_claude.tui.__main__:main"
